@@ -1,0 +1,22 @@
+﻿# Node
+node_modules/
+dist/
+.env
+
+# Java/Maven
+target/
+*.class
+*.jar
+*.war
+.settings/
+.classpath
+.project
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
