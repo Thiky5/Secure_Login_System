@@ -1,7 +1,12 @@
 import axios from "axios";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8081/api";
+// Using environment variable (Recommended)
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://your-backend-service.up.railway.app';
 
+export const registerUser = async (userData) => {
+  return await axios.post(`${API_BASE_URL}/api/auth/register`, userData);
+};
 const axiosClient = axios.create({
   baseURL: API_BASE_URL,
   headers: {
